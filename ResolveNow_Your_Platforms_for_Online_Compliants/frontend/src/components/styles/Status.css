@@ -1,0 +1,57 @@
+/* Full-screen glass background */
+.status-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #89f7fe, #66a6ff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+/* Container for cards */
+.status-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Each complaint card */
+.status-card {
+  width: 320px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 1rem;
+  color: #000;
+  transition: transform 0.2s ease;
+}
+
+.status-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Chat inside card */
+.chat-card {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.toggle-btn {
+  margin-top: 1rem;
+  float: right;
+}
+
+/* Responsive fix */
+@media (max-width: 576px) {
+  .status-card {
+    width: 100%;
+  }
+}

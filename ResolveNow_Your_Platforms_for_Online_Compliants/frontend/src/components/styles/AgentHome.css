@@ -1,0 +1,53 @@
+/* Full-page frosted background */
+.agent-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Grid layout for complaints */
+.agent-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Complaint card style */
+.agent-card {
+  width: 330px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  color: #000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.agent-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Chat area */
+.chat-wrapper {
+  margin-top: 1rem;
+}
+
+.chat-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .agent-card {
+    width: 100%;
+  }
+}

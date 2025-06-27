@@ -1,0 +1,44 @@
+.home-hero-section {
+  min-height: 90vh;
+  background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb); /* ✨ Glass-style gradient */
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animated-image {
+  max-width: 100%;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Optional button customization */
+.btn-light {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-light:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .home-hero-section {
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+}

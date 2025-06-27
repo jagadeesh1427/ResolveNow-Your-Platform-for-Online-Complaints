@@ -1,0 +1,102 @@
+/* Background: Frosted Blue Gradient */
+.gradient-custom {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #89f7fe, #66a6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Glassmorphic Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Form Controls */
+input.form-control {
+  background: rgba(255, 255, 255, 0.6);
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+input.form-control::placeholder {
+  color: #666;
+}
+
+input.form-control:focus {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+label.form-label {
+  color: #000;
+  font-weight: 500;
+}
+
+/* Headings & Descriptions */
+h2, .glass-card p {
+  color: #000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Dropdown Styles */
+.dropdown-toggle {
+  background: rgba(255, 255, 255, 0.6);
+  color: #000;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.dropdown-item {
+  color: #000;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border-radius: 12px;
+  padding: 0.75rem;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Login Link */
+.glass-card a {
+  color: #000 !important;
+  text-decoration: underline;
+  font-weight: 500;
+}

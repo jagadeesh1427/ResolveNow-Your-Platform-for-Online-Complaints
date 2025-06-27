@@ -1,0 +1,67 @@
+/* Full-page background */
+.admin-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+
+/* Navbar override */
+.navbar {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+/* Main content container */
+.content {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  color: #000;
+}
+
+/* For child components inside content */
+.content h2,
+.content h3,
+.content p,
+.content label {
+  color: #000;
+}
+
+/* Table or inner section styles if needed */
+.content table,
+.content .card,
+.content .accordion {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 1rem;
+  color: #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .content {
+    padding: 1.5rem;
+  }
+}
